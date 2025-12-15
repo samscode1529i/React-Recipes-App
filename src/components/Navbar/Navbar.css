@@ -1,0 +1,117 @@
+:root{
+    --baby-blue: #dcf3f7;
+    --black: #000000;
+}
+
+/* Navbar wrapper */
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #b1b1b1;
+  position: relative;
+  z-index: 100;
+}
+
+/* Main row */
+.nav-items {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 5.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  width: 7rem;
+  cursor: pointer;
+}
+
+/* Desktop nav links */
+.nav-list {
+  display: flex;
+  gap: 1.563rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.nav-list a:hover {
+  background-color: var(--baby-blue);
+}
+
+/* Social icons */
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-icons svg {
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.nav-icons svg:hover {
+  color: var(--baby-blue);
+}
+
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items{
+    padding: 2rem 1.5rem;
+  }
+}
