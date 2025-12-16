@@ -12,6 +12,10 @@
     --baby-blue: #E7FAFE;
     --black: #000000;
 }
+/* 
+body{
+    overflow-x: hidden;
+} */
 
 h2{
     font-size: 3rem;

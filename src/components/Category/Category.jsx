@@ -24,22 +24,22 @@ const Category = () => {
                 <button data-aos="fade-left">View all Categories</button>
             </div>
 
-            <div className="category--main">
-                <div className='item-text'>
+            <div className="category--main" >
+                <div className='item-text'  data-aos="fade-up">
                     <div className='category-img'>
                         <img src={brakefast} alt="" />
                     </div>
                     <p className='b-fast'>Breakfast</p>
                 </div>
 
-                <div className='item-text'>
+                <div className='item-text' data-aos="fade-down">
                     <div className='category-img'>
                         <img src={vegan} alt="" />
                     </div>
                     <p className='vegan'>Vegan</p>
                 </div>
 
-                <div className='item-text'>
+                <div className='item-text'  data-aos="fade-up">
                     <div className='category-img'>
                         <img src={meat} alt="" />
                     </div>
@@ -47,21 +47,21 @@ const Category = () => {
                 </div>
                 
                 
-                <div className='item-text'>
+                <div className='item-text'  data-aos="fade-down">
                     <div className='category-img'>
                         <img src={dessert} alt="" />
                     </div>
                     <p className='dessert'>Dessert</p>
                 </div>
                 
-                <div className='item-text'>
+                <div className='item-text'  data-aos="fade-up">
                     <div className='category-img'>
                         <img src={lunch} alt="" />
                     </div>
                     <p className='lunch'>Lunch</p>
                 </div>
                 
-                <div className='item-text'>
+                <div className='item-text'  data-aos="fade-down">
                     <div className='category-img'>
                         <img src={chocolate} alt="" />
                     </div>
