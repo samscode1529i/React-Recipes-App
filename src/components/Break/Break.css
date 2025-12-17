@@ -1,0 +1,134 @@
+.break {
+  display: flex;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 2rem;
+  margin-bottom: 6rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.break .left-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.break .left-container h2 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.break .left-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.break .left-container .btn {
+  width: 140px;
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.break .left-container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.break .right-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.break .right-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.break .right-container .break-img {
+  position: relative;
+  z-index: 1;
+}
+
+.veggies {
+  position: absolute;
+  left: 0; /* adjust as needed */
+  z-index: 2;
+  animation: bounce 1.5s infinite;
+  transition: transform 0.5s;
+}
+
+.veggies[data-aos] {
+  animation-play-state: paused; 
+}
+
+.veggies.aos-animate {
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .break {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .break .left-container {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .break .right-container {
+    margin-top: 2rem;
+    max-width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .break .left-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .break .left-container p {
+    font-size: 0.9rem;
+  }
+
+  .break .right-container {
+    max-width: 300px;
+  }
+
+  .veggies {
+    left: 10px; /* adjust for smaller screens */
+  }
+}

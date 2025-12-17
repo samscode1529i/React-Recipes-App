@@ -2,7 +2,7 @@ import React from 'react'
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel'
 import Category from '../components/Category/Category'
 import RecipieGrid from '../components/Recipie/RecipieGrid'
-
+import Break from '../components/Break/Break'
 
 
 const Home = () => {
@@ -11,6 +11,7 @@ const Home = () => {
       <HeroCarousel />
       <Category />
       <RecipieGrid />
+      <Break />
 
     </div>
   )
