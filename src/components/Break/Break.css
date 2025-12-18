@@ -27,6 +27,7 @@
 .break .left-container p {
   font-size: 1rem;
   line-height: 1.5;
+  color: grey;
 }
 
 .break .left-container .btn {

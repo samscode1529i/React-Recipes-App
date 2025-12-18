@@ -1,0 +1,124 @@
+h2 {
+  font-size: 2.3rem;
+}
+
+/* ---------------- Social Wrapper ---------------- */
+.social {
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+
+/* ---------------- Header ---------------- */
+.social .social--head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social p {
+  margin-top: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* ---------------- Images ---------------- */
+.social .social--main .social-images {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1.7rem;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.social .social--main img { 
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------- Button ---------------- */
+.social--main .social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.social--main .social-btn .btn {
+  background-color: black;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.social--main .social-btn .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------- Media Queries ---------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .social {
+    padding: 0 2rem;
+  }
+
+  .social .social--main img {
+    width: 200px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .social {
+    padding: 0 1.5rem;
+  }
+
+  .social p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .social .social--main .social-images {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .social .social--main img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .social--main .social-btn {
+    margin-top: 3rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .social .social--main img {
+    max-width: 240px;
+  }
+}
