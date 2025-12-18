@@ -5,6 +5,7 @@ import RecipieGrid from '../components/Recipie/RecipieGrid'
 import Break from '../components/Break/Break'
 import Social from '../components/Social/Social'
 import FeaturedGrid from '../components/Featured/FeaturedGrid'
+import PreFooter from '../components/Pre-footer/PreFooter'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Break />
       <Social />
       <FeaturedGrid />
+      <PreFooter />
 
     </div>
   )
