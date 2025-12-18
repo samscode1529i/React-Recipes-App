@@ -13,6 +13,11 @@
   align-items: center;
 }
 
+.recipe-card.no-bg {
+  background: transparent; /* removes the gradient */
+  box-shadow: none;        /* optional if you want no shadow */
+}
+
 
 .recipe-card-img {
   width: 90%;

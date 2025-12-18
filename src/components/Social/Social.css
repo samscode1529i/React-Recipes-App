@@ -6,6 +6,9 @@ h2 {
 .social {
   margin-bottom: 5rem;
   padding: 0 3rem;
+  background: #ffffff;
+  background: linear-gradient(174deg,rgba(255, 255, 255, 1) 0%, rgba(231, 250, 254, 0.88) 53%);
+  
 }
 
 /* ---------------- Header ---------------- */
@@ -58,6 +61,7 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: all 0.2s ease;
+  margin-bottom: 5rem;
 }
 
 .social--main .social-btn .btn:hover {
@@ -122,3 +126,12 @@ h2 {
     max-width: 240px;
   }
 }
+
+/* ---------------- Grid ---------------- */
+.featured--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0;
+}
+

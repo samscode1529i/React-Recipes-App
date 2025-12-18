@@ -47,7 +47,6 @@ const RecipieGrid = () => {
 
       <div className="recipie-grid">
         {recipies.map((recipe, index) => {
-          // Decide animation based on odd/even index
           const animation = index % 2 === 0 ? "fade-up" : "fade-down";
           return (
             <RecipieCards
