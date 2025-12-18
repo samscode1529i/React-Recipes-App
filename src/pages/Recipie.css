@@ -1,0 +1,68 @@
+.recipe--head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.recipe--head h1{
+    margin-bottom: 1rem;
+}
+
+.recipe{
+    padding: 4rem;
+}
+
+.recipe .featured--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.pagination button:hover {
+  background: #4DAFEF;
+  color: #fff;
+}
+
+.pagination button.active {
+  background: #4DAFEF;
+  color: #fff;
+}
+
+
+@media (max-width: 1024px) {
+    .recipe .featured--grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe .featured--grid {
+        grid-template-columns: 1fr;
+    }
+    .recipe{
+        padding: 2rem;
+    }
+    .recipe--head p{
+        text-align: center;
+    }
+}
