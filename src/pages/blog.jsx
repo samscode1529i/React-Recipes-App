@@ -1,8 +1,13 @@
 import React from 'react'
+import BlogPosts from '../components/BlogPosts/BlogPosts'
+import PreFooter from '../components/Pre-footer/PreFooter'
 
 const blog = () => {
   return (
-    <div>blog</div>
+    <div>
+      <BlogPosts />
+      <PreFooter />
+    </div>
   )
 }
 
