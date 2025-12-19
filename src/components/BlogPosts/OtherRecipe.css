@@ -1,0 +1,47 @@
+.other-recipes {
+  width: 300px;
+   margin-right: 100px;
+   margin-top: 275px;
+}
+
+.other-recipes h2 {
+  margin-bottom: 1.5rem;
+}
+
+.other-recipe-card {
+  display: flex;
+  width: 350px;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.other-recipe-card img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.other-recipe-info h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.other-recipe-info small {
+  color: #777;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .other-recipes {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .other-recipe-card {
+    flex-direction: row;
+  }
+}

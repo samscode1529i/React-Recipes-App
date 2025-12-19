@@ -1,0 +1,14 @@
+.blog-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start; /* align top of sidebar with posts */
+  /* padding: 0 5rem; */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .blog-layout {
+    flex-direction: column; /* stack posts & sidebar on mobile */
+    padding: 0 1rem;
+  }
+}

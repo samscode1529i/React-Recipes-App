@@ -3,28 +3,8 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import "./RecipieGrid.css"
 import RecipieCards from './RecipieCards.jsx'
+import recipies from './RecipesData.js'
 
-import grid1 from '../../assets/grid1.png'
-import grid2 from '../../assets/grid2.png'
-import grid3 from '../../assets/grid3.png'
-import grid4 from '../../assets/grid4.png'
-import grid5 from '../../assets/grid5.png'
-import grid6 from '../../assets/grid6.png'
-import grid7 from '../../assets/grid7.png'
-import grid8 from '../../assets/grid8.png'
-import grid9 from '../../assets/grid9.png'
-
-const recipies = [
-  { id: 1, title: "Lemon Salmo", image: grid1, duration: 35, type: "Pasta" },
-  { id: 2, title: "Honey Dipped Pancakes", image: grid2, duration: 35, type: "Chicken" },
-  { id: 3, title: "Beef Burger", image: grid3, duration: 20, type: "Salad" },
-  { id: 4, title: "Full Salad Bowl", image: grid4, duration: 25, type: "Beef" },
-  { id: 5, title: "Meat Balls", image: grid5, duration: 40, type: "Seafood" },
-  { id: 6, title: "Pancakes", image: grid6, duration: 15, type: "Dessert" },
-  { id: 7, title: "Chicken n Rice", image: grid7, duration: 30, type: "Pasta" },
-  { id: 8, title: "Pasta Red Sauce", image: grid8, duration: 10, type: "Fruit" },
-  { id: 9, title: "Burrito Chicken Wrap", image: grid9, duration: 35, type: "Fish" },
-]
 
 const RecipieGrid = () => {
 

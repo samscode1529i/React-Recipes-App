@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos"
 import './BlogPosts.css'
 import blog1 from '../../assets/blog1.png'
 import blog2 from '../../assets/blog2.png'
@@ -8,7 +9,7 @@ import blog5 from '../../assets/blog5.png'
 import blog6 from '../../assets/blog6.png'
 
 const blogPosts = [
-  {
+   {
     id: 1,
     title: "5 Tips for Perfect Pasta",
     image: blog1,
@@ -59,17 +60,24 @@ const blogPosts = [
 ]
 
 const BlogPosts = () => {
+        useEffect(() => {
+          AOS.init({
+            duration: 800,
+            once: true,
+          })
+        }, [])
   return (
     <>
 
-    <div className="blog--head">
-      <h2>Blog & Artice</h2>
-      <p>Check around our blog, post or look up dishes you find interesting share your cullunary opinions with the whole world</p>
-    </div>
+
 
     <div className="blogPosts">
+      <div className="blog--head">
+        <h2>Blog & Artice</h2>
+        <p>Check around our blog, post or look up dishes you find interesting share your cullunary opinions with the whole world</p>
+      </div>
       {blogPosts.map(post => (
-        <div className="blog-post-card" key={post.id}>
+        <div className="blog-post-card" key={post.id}  data-aos="fade-up">
           <img src={post.image} alt={post.title} />
           <div className="blog-post-content">
             <h3>{post.title}</h3>
