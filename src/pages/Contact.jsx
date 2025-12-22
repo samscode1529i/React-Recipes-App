@@ -1,8 +1,13 @@
 import React from 'react'
+import Contacts from '../components/Contacts/Contacts'
+import PreFooter from '../components/Pre-footer/PreFooter'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Contacts/>
+      <PreFooter/>
+    </div>
   )
 }
 
